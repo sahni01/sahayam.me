@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Header styling starts */
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background:white ;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+
+
+  
+  
+}
+#logo h2{
+  font-size: 2.0rem;
+  padding:  8px 20px;
+  font-family: 'Cedarville Cursive', cursive;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li a{
+  background: transparent;
+  text-decoration: none;
+  color: black;
+  padding: 8px ;
+  /* border: 1.5px solid black; */
+}
+nav ul li a:hover{
+  color: #e622b5;
+  /* border: 1.5px solid #e622b5 */
+}
+.menu-lines{
+  font-size: 1.7rem;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+#menu{
+  transition: all 0.3s ease-in;
+}
+@media only screen and (max-width:768px){
+  nav ul{
+    display: none;
+    
+  }
+  header{
+    justify-content: space-between;
+    
+  }
+  .menu-lines{
+    display: block;
+  }
+  .navmenu{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .hamburger{
+    height: 263px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.5);
+  
+  
+  
+  }
+}
+.container{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Arial;
+text-align: center;
+}
+.bt{
+border: none;
+background: #e622b5;
+color: white;
+padding: 10px 30px;
+border-radius: 30px;
+}
+select{
+padding: 7px 30px;
+border-radius: 30px;
+}
+.bt:hover{
+  background: rgb(224, 85, 183);
+}

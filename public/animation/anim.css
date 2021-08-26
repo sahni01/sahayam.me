@@ -1,0 +1,17 @@
+.welcome h2,.welcome p{
+    animation: slide 1s ease;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+.container{
+    animation: slide 1s ease;
+}

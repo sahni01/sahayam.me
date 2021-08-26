@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="icon"  href="../img/favicon.jpg">
+    <script src="../js/hamburger.js"></script>
+    <title>Search</title>
+</head>
+<body>
+    <header id="header">
+        <!-- Logo is here -->
+        <div id="logo">
+            <h2>Sahayam.me</h2>
+        </div>
+        <!-- navbar is here -->
+        
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="menu-lines" onclick="menu()">
+            &#9776;
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="inner-container">
+                <label for="budget">Select your Budget : </label>
+                <select id="budget" onchange="fetchdata()">
+                    
+                    <option value="10000">10000-below</option>
+                    <option value="15000">10000-15000</option>
+                    <option value="20000">15000-20000</option>      
+                    <option value="25000">20000-25000</option>      
+                    <option value="30000">25000-30000</option>      
+                    <option value="35000">30000-35000</option>      
+                    <option value="40000">35000-40000</option>      
+                    <option value="50000">40000-50000</option>      
+                    <option value="100000">50000-100000</option>      
+                    <option value="above">100000-above</option>      
+                          
+                    
+                </select>
+                <button class="bt" type="button" onclick="fetchdata()">Search</button>
+            </div>
+        </div>
+    </section>
+    <section class="products-section">
+        
+    </section>
+    
+    <footer>
+        <div class="footer">
+            
+            <div class="socials">
+                <p>Our Socials</p>
+                <a href="#" class="links"><img src="../icons/facebook.png"> Facebook group</a>
+                <a href="#" class="links"><img src="../icons/twitter.png"> twitter</a>
+                <a href="#" class="links"><img src="../icons/instagram.png"> Instagram</a>
+                <a href="#" class="links"><img src="../icons/youtube.png"> Youtube channel</a>
+                
+            </div>
+            
+        </div>
+        
+        <div class="copyright">
+            <div class="symbol">
+                Copyright &#169; 2021 Sahayam.me
+                
+            </div>
+        </div>
+        
+        
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/apicall.js"></script>
+</body>
+</html>
